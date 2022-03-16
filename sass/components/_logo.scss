@@ -1,0 +1,58 @@
+.logo {
+  font-family: $primary-font-family;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: .5s;
+
+  @include lg {
+    font-size: 30px;
+  }
+
+  &__link {
+    @extend %link;
+    color: #fff;
+  }
+
+  &__text {
+    width: max-content;
+    margin-top: 10px;
+    font-size: 13px;
+    color:#fff;
+
+    @include lg {
+      font-size: 20px;
+    }
+  }
+}
+
+.logo-mobile {
+  position: absolute;
+  font-family: $primary-font-family;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: .5s;
+
+&__link {
+  @extend %link;
+  display: flex;
+  justify-content: center;
+  color: #92150c;
+  }
+
+&__text {
+  width: max-content;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #92150c;
+  }
+}

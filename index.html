@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hordit</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+   <header class="header">
+
+    <!-----------Mobile Tablet----------->
+
+        <div class="logo-mobile" id="pusks">
+          <h1>
+            <a href="./index.html" class="logo-mobile__link">Hordit</a>
+            <p class="logo-mobile__text">Hello, my name is Tetyana Hordiyenko</p>
+          </h1>
+        </div>
+        <div class="btn-wrap">
+          <button class="open-menu active" onclick="view()">Menu</button>
+          <button class="close-menu" onclick="view()">Close</button>
+        </div>
+        <menu class="mobile-menu">
+          <nav class="navMob">
+            <ul class="menuMob">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="https://hordit.github.io/goit-markup-hw-08/">Project</a>
+              </li>
+              <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="https://www.canva.com/design/DAE6qqBRnIg/0AOwXtOQ_nNoVc7KtfJKAA/view?utm_content=DAE6qqBRnIg&utm_campaign=designshare&utm_medium=link&utm_source=shareyourdesignpanel">Resume</a>
+              </li>
+              <li class="mobile-menu__item separ">
+                <a class="mobile-menu__link">Hobby</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__separ" href="mailto:hordit@me.com">
+                  hordit@me.com</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__separ" href="tel:+39 392 690 31 81">
+                  +39 392 690 31 81</a>
+              </li>
+            </ul>
+          </nav>
+        </menu>
+    
+    <!-------------Desktop---------------->
+
+      <div class="wrapper">
+        <div class="boxImg centered">
+
+           <picture>
+            <source
+              srcset="
+                ./images/mobimg/mobimg1x.webp 1x,
+                ./images/mobimg/mobimg2x.webp 2x
+              "
+              media="(max-width: 767px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/mobimg/mobimg1x.jpeg 1x,
+                ./images/mobimg/mobimg2x.jpeg 2x
+              "
+              media="(max-width: 767px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="
+                ./images/tabimg/tabimg1x.webp 1x,
+                ./images/tabimg/tabimg2x.webp 2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp
+              "
+            />
+            <source
+              srcset="
+                ./images/tabimg/tabimg1x.jpeg 1x,
+                ./images/tabimg/tabimg2x.jpeg 2x
+              "
+              media="(min-width: 768px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="
+                ./images/deskimg/deskimg1x.webp 1x,
+                ./images/deskimg/deskimg2x.webp 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/webp
+              "
+            />
+            <source
+              srcset="
+                ./images/deskimg/deskimg1x.jpeg 1x,
+                ./images/deskimg/deskimg2x.jpeg 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/jpeg"
+            />
+            <img src="./images/mobimg/mobimg1x.jpeg" alt="grass" />
+           </picture> 
+            
+            <div class="logo">
+              <h1>
+               <a href="./index.html" class="logo__link mobmenu">Hordit</a>
+               <p class="logo__text">Hello, My Name Is Tetyana Hordiyenko</p>
+              </h1>
+            </div>
+
+            <div class="container boxMenu">
+              <nav class="nav-main">
+                <ul class="nav-menu">
+                  <li class="nav-menu__item">
+                    <a href="https://hordit.github.io/goit-markup-hw-08/" class="nav-menu__link nav-menu__select">Project</a>
+                  </li>
+                  <li class="nav-menu__item">
+                    <a href="https://www.canva.com/design/DAE6qqBRnIg/0AOwXtOQ_nNoVc7KtfJKAA/view?utm_content=DAE6qqBRnIg&utm_campaign=designshare&utm_medium=link&utm_source=shareyourdesignpanel" class="nav-menu__link">Resume</a>
+                  </li>
+                  <li class="nav-menu__item">
+                    <a href="" class="nav-menu__link">Hobby</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="nav-contacts">
+                <ul class="list-contacts">
+                  <li class="list-contacts__item">
+                    <a href="mailto:hordit@me.com" class="list-contacts__link">
+                      hordit@me.com
+                    </a>
+                  </li>
+                  <li class="list-contacts__item">
+                    <a href="tel:+39 392 690 31 81" class="list-contacts__link">
+                      +39 392 690 31 81
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+         </div>
+         
+       </div>
+   </header>
+  <script src="./js/presentation.js"></script> 
+  <script src="./js/menu.js"></script>
+  </body>
+</html>

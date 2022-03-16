@@ -1,0 +1,78 @@
+@mixin paddingTopBot($top: 60px, $bottom: 60px) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin centeredFlex($type: flex, $centered: center, $justify: center) {
+  display: $type;
+  align-items: $centered;
+  justify-content: $justify;
+}
+
+@mixin widtHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+/*                Media Query              */
+
+/*    Small devices Min and Max    */
+@mixin sm {
+  @media screen and (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin sm-lg-max {
+  @media screen and (min-width: #{$screen-sm-min}) and (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+/*    Medium Devices Min   */
+@mixin md {
+  @media screen and (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin md-max {
+  @media screen and (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+/*    Large Devices Max   */
+@mixin lg-max {
+  @media screen and (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+/*    Large Devices    */
+@mixin lg {
+  @media screen and (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+/*    Small devices Min and Max    */
+@mixin lg-xl-max {
+  @media screen and (min-width: #{$screen-lg-min}) and (max-width: #{$screen-xl-max}) {
+    @content;
+  }
+}
+
+/*    Extra Large Devices Min   */
+@mixin xl {
+  @media screen and (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+/*    Extra Large Devices Max   */
+@mixin xl-max {
+  @media screen and (max-width: #{$screen-xl-max}) {
+    @content;
+  }
+}

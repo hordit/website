@@ -1,0 +1,106 @@
+.btn-wrap {
+  position: relative;
+  top: 10px;
+  width: 200px;
+  height: 50px;
+  z-index: 5;
+  overflow: hidden;
+
+  @include xl {
+    display: none;
+    }
+}
+
+button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: $mobile-font-family;
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #01530f;
+  cursor: pointer;
+  left: -100%;
+  transition: left 1s;
+}
+
+.active {
+  left: 0;
+}
+
+.menuMob {
+  @extend %list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-menu {
+  @extend %list;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 1px;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  background: rgba(243, 103, 103, 0.1);
+  transform: translate(-150%, -50%);
+  transition: transform 1s 1s, height 1s;
+
+&__link {
+  @extend %link;
+  overflow: hidden;
+  font-family: $mobile-font-family;
+  color: #f14242;
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  transform: translateY(-100%);
+  transition: transform .5s;
+  }
+
+&__separ {
+font-size: 25px;
+}
+
+&__item {
+  margin: 5px;
+  padding: 1px;
+  opacity: 0;
+  transition: opacity 1s;
+  }
+  
+&.open &__item {
+  opacity: 1;
+  transition: opacity 1s 1s;
+  }
+
+&.open .logo-mobile {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+&.open &__link {
+  transform: translateY(0);
+  transition: transform .5s 1.5s;
+  }
+}
+
+.open {
+  height: 100%;
+  transform: translate(-50%, -50%);
+  transition: transform 1s, height 1s 1s;
+}
+
+.separ {
+  margin-bottom: 70px;
+}
