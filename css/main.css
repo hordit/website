@@ -309,7 +309,7 @@ summary {
 /*    Small devices Min and Max    */
 /*    Extra Large Devices Min   */
 /*    Extra Large Devices Max   */
-body {
+.backg {
   height: 100%;
   background-image: url("../images/background/moback1x.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -320,31 +320,31 @@ body {
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 1 / 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  body {
+  .backg {
     background-image: url("../images/background/moback2x.jpeg");
   }
 }
 
 @media screen and (min-width: 480px) {
-  body {
+  .backg {
     background-image: url("../images/background/taback1x.jpeg");
   }
 }
 
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-o-min-device-pixel-ratio: 1 / 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
-  body {
+  .backg {
     background-image: url("../images/background/taback2x.jpeg");
   }
 }
 
 @media screen and (min-width: 768px) {
-  body {
+  .backg {
     background-image: url("../images/background/deskback1x.jpeg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 1 / 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  body {
+  .backg {
     background-image: url("../images/background/deskback2x.jpeg");
   }
 }
