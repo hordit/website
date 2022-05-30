@@ -1,167 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hordit</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <p></p>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
- <div id="drag-container">
-  <div id="spin-container">
-
-      <!-- Add images here -->    
-      <picture>
-        <source srcset="
-                        ./images/picture/mobpic/1mobpic1x.webp 1x,
-                        ./images/picture/mobpic/1mobpic2x.webp 2x
-                        " 
-                media="(max-width: 767px)"
-                type="image/webp" />
-        <source srcset="
-                        ./images/picture/mobpic/1mobpic1x.jpeg 1x,
-                        ./images/picture/mobpic/1mobpic2x.jpeg 2x
-                        "
-                media="(max-width: 767px)" 
-                type="image/jpeg" />
-        <source srcset="
-                       ./images/picture/despic/1despic1x.webp 1x,
-                       ./images/picture/despic/1despic2x.webp 2x
-                       " 
-                media="(min-width: 768px)" 
-                type="image/webp" />
-        <source srcset="
-                        ./images/picture/despic/1despic1x.jpeg 1x,
-                        ./images/picture/despic/1despic2x.jpeg 2x
-                        " 
-                media="(min-width: 768px)" 
-                type="image/jpeg" />
-           <img src="./images/picture/mobpic/1mobpic1x.jpeg" 
-                alt="abstraction" />
-      </picture>
-   
-      <picture>
-        <source srcset="
-                        ./images/picture/mobpic/2mobpic1x.webp 1x,
-                        ./images/picture/mobpic/2mobpic2x.webp 2x
-                        " 
-                media="(max-width: 767px)" 
-                type="image/webp" />
-        <source srcset="
-                       ./images/picture/mobpic/2mobpic1x.jpeg 1x,
-                       ./images/picture/mobpic/2mobpic2x.jpeg 2x
-                       " 
-                media="(max-width: 767px)" 
-                type="image/jpeg" />
-        <source srcset="
-                        ./images/picture/despic/2despic1x.webp 1x,
-                        ./images/picture/despic/2despic2x.webp 2x
-                        " 
-                media="(min-width: 768px)" 
-                type="image/webp" />
-        <source srcset="
-                        ./images/picture/despic/2despic1x.jpeg 1x,
-                        ./images/picture/despic/2despic2x.jpeg 2x
-                        " 
-                media="(min-width: 768px)" 
-                type="image/jpeg" />
-           <img src="./images/picture/mobpic/2mobpic1x.jpeg" 
-                alt="abstraction" />
-      </picture>
-    
-      <picture>
-         <source srcset="
-                        ./images/picture/mobpic/3mobpic1x.webp 1x,
-                        ./images/picture/mobpic/3mobpic2x.webp 2x
-                        "
-                 media="(max-width: 767px)"
-                 type="image/webp" />
-         <source srcset="
-                         ./images/picture/mobpic/3mobpic1x.jpeg 1x,
-                         ./images/picture/mobpic/3mobpic2x.jpeg 2x
-                         "
-                 media="(max-width: 767px)" 
-                 type="image/jpeg" />
-         <source srcset="
-                         ./images/picture/despic/3despic1x.webp 1x,
-                         ./images/picture/despic/3despic2x.webp 2x
-                         " 
-                 media="(min-width: 768px)" 
-                 type="image/webp" />
-         <source srcset="
-                         ./images/picture/despic/3despic1x.jpeg 1x,
-                         ./images/picture/despic/3despic2x.jpeg 2x
-                         " 
-                 media="(min-width: 768px)" 
-                 type="image/jpeg" />
-            <img src="./images/picture/mobpic/3mobpic1x.jpeg" 
-                 alt="abstraction" />
-      </picture>  
-    
-      <picture>
-         <source srcset="
-                         ./images/picture/mobpic/4mobpic1x.webp 1x,
-                         ./images/picture/mobpic/4mobpic2x.webp 2x
-                         " 
-                 media="(max-width: 767px)"
-                 type="image/webp" />
-         <source srcset="
-                         ./images/picture/mobpic/4mobpic1x.jpeg 1x,
-                         ./images/picture/mobpic/4mobpic2x.jpeg 2x
-                         "
-                 media="(max-width: 767px)" 
-                 type="image/jpeg" />
-         <source srcset="
-                         ./images/picture/despic/4despic1x.webp 1x,
-                         ./images/picture/despic/4despic2x.webp 2x
-                         " 
-                 media="(min-width: 768px)" 
-                 type="image/webp" />
-         <source srcset="
-                         ./images/picture/despic/4despic1x.jpeg 1x,
-                         ./images/picture/despic/4despic2x.jpeg 2x
-                         " 
-                 media="(min-width: 768px)" 
-                 type="image/jpeg" />
-            <img src="./images/picture/mobpic/4mobpic1x.jpeg" 
-                 alt="abstraction" />
-      </picture>  
-   
-      <picture>
-         <source srcset="
-                         ./images/picture/mobpic/mobpic1x.webp 1x,
-                         ./images/picture/mobpic/mobpic2x.webp 2x
-                         " 
-                 media="(max-width: 767px)" 
-                 type="image/webp" />
-         <source srcset="
-                         ./images/picture/mobpic/mobpic1x.jpeg 1x,
-                         ./images/picture/mobpic/mobpic2x.jpeg 2x
-                         " 
-                 media="(max-width: 767px)" 
-                 type="image/jpeg" />
-         <source srcset="
-                         ./images/picture/despic/despic1x.webp 1x,
-                         ./images/picture/despic/despic2x.webp 2x"
-                 media="(min-width: 768px)" 
-                 type="image/webp" />
-         <source srcset="
-                         ./images/picture/despic/despic1x.jpeg 1x,
-                         ./images/picture/despic/despic2x.jpeg 2x
-                         " 
-                 media="(min-width: 768px)" 
-                 type="image/jpeg" />
-            <img src="./images/picture/mobpic/mobpic1x.jpeg" 
-                 alt="abstraction" />
-      </picture>
-    
-      <!-- Text at center of ground -->
-      <p>AbstractioN</p>
+<div id="drag-container">
+    <div id="spin-container">
+        <!-- Add your images (or video) here -->
+        <img src="./images/picture/1pic2x.jpg"
+            alt="abstraction" width="200">
+        <img src="./images/picture/2pic2x.jpg"
+            alt="abstraction" width="200">
+        <img src="./images/picture/3pic2x.jpg"
+            alt="abstraction" width="200">
+        <img src="./images/picture/4pic2x.jpg"
+            alt="abstraction" width="200">
+        <p>Acrylic paintings painted on 2 meters canvas with hands and feet using abstract technique. Hordit</p>
     </div>
     <div id="ground"></div>
-  </div>
-  <div id="music-container"></div>
-  <script src="./js/carousel.js"></script>
+</div>
+<div id="music-container"></div>
+<script src="./js/carousel.js"></script>
 </body>
-
-</html>

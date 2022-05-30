@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hordit</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+ <div id="drag-container">
+  <div id="spin-container">
+
+      <!-- Add images here -->    
+<picture>
+        <source srcset="
+                        ./images/picture/1pic1x.webp 1x,
+                        ./images/picture/1pic2x.webp 2x
+                        " media="(max-width: 767px)" type="image/webp" />
+        <source srcset="
+                        ./images/picture/1pic1x.jpeg 1x,
+                        ./images/picture/1pic2x.jpeg 2x
+                        " media="(max-width: 767px)" type="image/jpeg" />
+
+        <source srcset="
+                        ./images/picture/1pic1x.webp 1x,
+                        ./images/picture/1pic2x.webp 2x
+                        " media="(min-width: 768px)" type="image/webp" />
+        <source srcset="
+                        ./images/picture/1pic1x.jpeg 1x,
+                        ./images/picture/1pic2x.jpeg 2x
+                        " media="(min-width: 768px)" type="image/jpeg" />
+
+        <img src="./images/picture/1pic1x.jpeg" alt="abstraction" />
+</picture>
+   
+<picture>
+        <source srcset="
+                        ./images/picture/2pic1x.webp 1x,
+                        ./images/picture/2pic2x.webp 2x
+                        " media="(max-width: 767px)" type="image/webp" />
+        <source srcset="
+                        ./images/picture/2pic1x.jpeg 1x,
+                        ./images/picture/2pic2x.jpeg 2x
+                        " media="(max-width: 767px)" type="image/jpeg" />
+
+        <source srcset="
+                        ./images/picture/2pic1x.webp 1x,
+                        ./images/picture/2pic2x.webp 2x
+                        " media="(min-width: 768px)" type="image/webp" />
+        <source srcset="
+                        ./images/picture/2pic1x.jpeg 1x,
+                        ./images/picture/2pic2x.jpeg 2x
+                        " media="(min-width: 768px)" type="image/jpeg" />
+
+        <img src="./images/picture/2pic1x.jpeg" alt="abstraction" />
+</picture>
+    
+<picture>
+        <source srcset="
+                        ./images/picture/3pic1x.webp 1x,
+                        ./images/picture/3pic2x.webp 2x
+                        " media="(max-width: 767px)" type="image/webp" />
+        <source srcset="
+                        ./images/picture/3pic1x.jpeg 1x,
+                        ./images/picture/3pic2x.jpeg 2x
+                        " media="(max-width: 767px)" type="image/jpeg" />
+
+        <source srcset="
+                        ./images/picture/3pic1x.webp 1x,
+                        ./images/picture/3pic2x.webp 2x
+                        " media="(min-width: 768px)" type="image/webp" />
+        <source srcset="
+                        ./images/picture/3pic1x.jpeg 1x,
+                        ./images/picture/3pic2x.jpeg 2x
+                        " media="(min-width: 768px)" type="image/jpeg" />
+
+        <img src="./images/picture/3pic1x.jpeg" alt="abstraction" />
+</picture>
+   
+<picture>
+        <source srcset="
+                        ./images/picture/4pic1x.webp 1x,
+                        ./images/picture/4pic2x.webp 2x
+                        " media="(max-width: 767px)" type="image/webp" />
+        <source srcset="
+                        ./images/picture/4pic1x.jpeg 1x,
+                        ./images/picture/4pic2x.jpeg 2x
+                        " media="(max-width: 767px)" type="image/jpeg" />
+
+        <source srcset="
+                        ./images/picture/4pic1x.webp 1x,
+                        ./images/picture/4pic2x.webp 2x
+                        " media="(min-width: 768px)" type="image/webp" />
+        <source srcset="
+                        ./images/picture/4pic1x.jpeg 1x,
+                        ./images/picture/4pic2x.jpeg 2x
+                        " media="(min-width: 768px)" type="image/jpeg" />
+
+        <img src="./images/picture/4pic1x.jpeg" alt="abstraction" />
+</picture>
+    
+      <!-- Text at center of ground -->
+      <p>Hordit</p>
+    </div>
+    <div id="ground"></div>
+  </div>
+  <div id="music-container"></div>
+  <script src="./js/carousel.js"></script>
+</body>
+
+</html>
