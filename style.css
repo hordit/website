@@ -60,10 +60,12 @@ body {
 }
 
 #drag-container p {
-    font-family:'Comfortaa', cursive;
+    font-family: 'Comfortaa', cursive;  
     font-size: 25px;
     font-weight: bold;
+    -webkit-text-shadow: 0 0 15px #fffd;
     text-shadow: 0 0 15px #fffd;
+    -webkit-text-reflect: below 10px linear-gradient(transparent, transparent, #0007);
     position: absolute;
     top: 100%;
     left: 50%;
