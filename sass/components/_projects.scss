@@ -1,0 +1,67 @@
+.container {
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.background {
+  background-color: #cae8c7;
+}
+
+.project-section {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 20px solid transparent;
+  border-image: linear-gradient(45deg, #01530f, #92150c);
+  border-image-slice: 1;
+  animation: rotateColors 5s $cubic infinite;
+}
+
+@keyframes rotateColors {
+  0%,
+  100% {
+    border-image-source: linear-gradient(45deg, #01530f, #92150c);
+  }
+  50% {
+    border-image-source: linear-gradient(45deg, #92150c, #01530f);
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  margin-top: 30px;
+  color: #92150c;
+  font-family: $mobile-font-family;
+  font-size: 30px;
+}
+
+.back {
+  @extend %link;
+  color: #01530f;
+  font-family: $mobile-font-family;
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.description {
+  margin-top: 10px;
+  font-family: $primary-font-family;
+  font-size: 15px;
+}
+
+.link {
+  @extend %link;
+  margin-right: 10px;
+  font-size: 15px;
+  font-family: $primary-font-family;
+  transition: transform 0.3s;
+  color: #01530f;
+
+  &:hover {
+    color:#92150c;
+    text-decoration: underline solid;
+  }
+}

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Mali:wght@700&family=Open+Sans:wght@400;700&family=Tangerine:wght@400;700&display=swap");
 html {
+  margin: 0;
+  padding: 0;
   height: 100%;
 }
 
@@ -48,14 +50,10 @@ Use a better box model (opinionated).
 3. Use a more readable tab size (opinionated).
 */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -moz-tab-size: 4;
-  /* 3 */
-  tab-size: 4;
-  /* 3 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
 }
 
 /*
@@ -67,10 +65,8 @@ Sections
 2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 body {
-  margin: 0;
-  /* 1 */
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  /* 2 */
+  margin: 0; /* 1 */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
 }
 
 /*
@@ -82,10 +78,8 @@ Grouping content
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 */
 hr {
-  height: 0;
-  /* 1 */
-  color: inherit;
-  /* 2 */
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
 }
 
 /*
@@ -115,10 +109,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -156,10 +148,8 @@ Tabular data
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 */
 table {
-  text-indent: 0;
-  /* 1 */
-  border-color: inherit;
-  /* 2 */
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
 }
 
 /*
@@ -175,14 +165,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -197,9 +183,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -252,11 +238,9 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -271,10 +255,8 @@ Remove the inner padding in Chrome and Safari on macOS.
 2. Change font properties to 'inherit' in Safari.
 */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /*
@@ -288,12 +270,12 @@ summary {
   display: list-item;
 }
 
-.nav-menu, .list-contacts, .menuMob, .mobile-menu {
+.mobile-menu, .menuMob, .list-contacts, .nav-menu {
   margin: 0;
   list-style: none;
 }
 
-.logo__link, .logo-mobile__link, .nav-menu__link, .list-contacts__link, .mobile-menu__link {
+.link, .back, .mobile-menu__link, .list-contacts__link, .nav-menu__link, .logo-mobile__link, .logo__link {
   text-decoration: none;
 }
 
@@ -318,32 +300,27 @@ summary {
   background-size: cover;
   background-color: transparent;
 }
-
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 1 / 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 1/2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .backg {
     background-image: url("../images/background/moback2x.jpeg");
   }
 }
-
 @media screen and (min-width: 480px) {
   .backg {
     background-image: url("../images/background/taback1x.jpeg");
   }
 }
-
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-o-min-device-pixel-ratio: 1 / 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-o-min-device-pixel-ratio: 1/2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .backg {
     background-image: url("../images/background/taback2x.jpeg");
   }
 }
-
 @media screen and (min-width: 768px) {
   .backg {
     background-image: url("../images/background/deskback1x.jpeg");
   }
 }
-
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 1 / 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 1/2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .backg {
     background-image: url("../images/background/deskback2x.jpeg");
   }
@@ -354,13 +331,11 @@ summary {
     width: 480px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
 }
-
 @media screen and (min-width: 1050px) {
   .container {
     width: 1200px;
@@ -376,26 +351,22 @@ summary {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
-  transition: .5s;
+  transition: 0.5s;
 }
-
 @media screen and (min-width: 768px) {
   .logo {
     font-size: 30px;
   }
 }
-
 .logo__link {
   color: #fff;
 }
-
 .logo__text {
   width: max-content;
   margin-top: 10px;
   font-size: 13px;
   color: #fff;
 }
-
 @media screen and (min-width: 768px) {
   .logo__text {
     font-size: 20px;
@@ -412,15 +383,13 @@ summary {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
-  transition: .5s;
+  transition: 0.5s;
 }
-
 .logo-mobile__link {
   display: flex;
   justify-content: center;
   color: #92150c;
 }
-
 .logo-mobile__text {
   width: max-content;
   margin-top: 10px;
@@ -444,25 +413,22 @@ summary {
   font-family: "Tangerine", cursive;
   font-weight: bold;
   transform: scale(0);
-  transition: .5s;
+  transition: 0.5s;
 }
-
 .nav-menu__item:not(:last-child) {
   margin-bottom: 30px;
   transition: 0.1s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .nav-menu__link:hover, .nav-menu__link:focus {
   color: #01530f;
 }
-
 .nav-menu__link {
   display: flex;
   align-items: center;
   font-size: 40px;
   letter-spacing: 5px;
   color: #fff;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .nav-contacts {
@@ -477,9 +443,8 @@ summary {
   font-family: "Tangerine", cursive;
   font-weight: bold;
   transform: scale(0);
-  transition: .5s;
+  transition: 0.5s;
 }
-
 .list-contacts__link {
   font-size: 25px;
   letter-spacing: 5px;
@@ -500,30 +465,26 @@ summary {
   top: 0;
   left: 0;
 }
-
 .boxMenu:before, .boxMenu:after {
-  content: '';
+  content: "";
   width: 100px;
   height: 400px;
   position: absolute;
   top: 0;
   left: 0;
-  background: #1da58459;
+  background: rgba(29, 165, 132, 0.3490196078);
   opacity: 0;
   transition: 1s;
 }
-
 @media screen and (min-width: 768px) {
   .boxMenu:before, .boxMenu:after {
     width: 100px;
     height: 300px;
   }
 }
-
 .boxMenu:before {
   transform: translateX(300%) rotate(45deg);
 }
-
 .boxMenu:after {
   transform: translateX(200%) rotate(45deg);
 }
@@ -534,7 +495,6 @@ summary {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 @media screen and (max-width: 1199px) {
   .wrapper {
     display: none;
@@ -547,56 +507,45 @@ summary {
   height: 250px;
   overflow: hidden;
 }
-
 @media screen and (min-width: 320px) and (max-width: 1050px) {
   .boxImg {
     width: 320px;
     height: 250px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .boxImg {
     width: 600px;
     height: 450px;
   }
 }
-
 .boxImg img {
   height: 250px;
-  transition: .5s;
+  transition: 0.5s;
 }
-
 @media screen and (min-width: 768px) {
   .boxImg img {
     height: 450px;
   }
 }
-
-.boxImg:hover .logo,
-.boxImg:focus .logo {
+.boxImg:hover .logo, .boxImg:focus .logo {
   opacity: 0;
 }
-
 .boxImg:hover img {
   transform: rotate(-45deg) scale(2);
   filter: blur(2px);
 }
-
 .boxImg:hover .boxMenu::before {
   transform: translateX(280%) rotate(45deg) scale(3);
-  transition: .5s;
-  opacity: .6;
+  transition: 0.5s;
+  opacity: 0.6;
 }
-
 .boxImg:hover .boxMenu::after {
   transform: translateX(200%) rotate(45deg) scale(3);
-  transition: .5s;
-  opacity: .6;
+  transition: 0.5s;
+  opacity: 0.6;
 }
-
-.boxImg:hover .nav-menu,
-.boxImg:hover .list-contacts {
+.boxImg:hover .nav-menu, .boxImg:hover .list-contacts {
   transform: scale(1);
   opacity: 1;
 }
@@ -614,7 +563,6 @@ summary {
   z-index: 5;
   overflow: hidden;
 }
-
 @media screen and (min-width: 1050px) {
   .btn-wrap {
     display: none;
@@ -664,7 +612,6 @@ button {
   transform: translate(-150%, -50%);
   transition: transform 1s 1s, height 1s;
 }
-
 .mobile-menu__link {
   overflow: hidden;
   font-family: "Tangerine", cursive;
@@ -673,33 +620,28 @@ button {
   font-weight: bold;
   letter-spacing: 5px;
   transform: translateY(-100%);
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
-
 .mobile-menu__separ {
   font-size: 25px;
 }
-
 .mobile-menu__item {
   margin: 5px;
   padding: 1px;
   opacity: 0;
   transition: opacity 1s;
 }
-
 .mobile-menu.open .mobile-menu__item {
   opacity: 1;
   transition: opacity 1s 1s;
 }
-
 .mobile-menu.open .logo-mobile {
   opacity: 0;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
-
 .mobile-menu.open .mobile-menu__link {
   transform: translateY(0);
-  transition: transform .5s 1.5s;
+  transition: transform 0.5s 1.5s;
 }
 
 .open {
@@ -711,4 +653,66 @@ button {
 .separ {
   margin-bottom: 70px;
 }
-/*# sourceMappingURL=main.css.map */
+
+.container {
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.background {
+  background-color: #cae8c7;
+}
+
+.project-section {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 20px solid transparent;
+  border-image: linear-gradient(45deg, #01530f, #92150c);
+  border-image-slice: 1;
+  animation: rotateColors 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes rotateColors {
+  0%, 100% {
+    border-image-source: linear-gradient(45deg, #01530f, #92150c);
+  }
+  50% {
+    border-image-source: linear-gradient(45deg, #92150c, #01530f);
+  }
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  margin-top: 30px;
+  color: #92150c;
+  font-family: "Tangerine", cursive;
+  font-size: 30px;
+}
+
+.back {
+  color: #01530f;
+  font-family: "Tangerine", cursive;
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.description {
+  margin-top: 10px;
+  font-family: "Comfortaa", cursive;
+  font-size: 15px;
+}
+
+.link {
+  margin-right: 10px;
+  font-size: 15px;
+  font-family: "Comfortaa", cursive;
+  transition: transform 0.3s;
+  color: #01530f;
+}
+.link:hover {
+  color: #92150c;
+  text-decoration: underline solid;
+}/*# sourceMappingURL=main.css.map */
